@@ -4,7 +4,7 @@ import {io} from 'socket.io-client'
 import Peer from 'simple-peer'
 
 import './App.css'
-const socket = io("http://localhost:5001/")
+const socket = io("https://video-call-server-kappa.vercel.app/")
 function App() {
 
 
