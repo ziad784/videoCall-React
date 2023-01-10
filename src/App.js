@@ -4,8 +4,9 @@ import {io} from 'socket.io-client'
 import Peer from 'simple-peer'
 
 import './App.css'
-const socket = io("https://video-call-server-kappa.vercel.app/", {
-  withCredentials: true
+const socket = io("http://ec2-3-92-60-66.compute-1.amazonaws.com:5001/", {
+  withCredentials: true,
+  transports: ['websocket']
 })
 function App() {
 
